@@ -1,0 +1,15 @@
+def split_even_odd(numbers):
+    evens = []
+    odds = []
+
+    for num in numbers:
+        if num % 2 == 0:
+            evens.append(num)
+        else:
+            odds.append(num)
+
+    return evens, odds
+numbers = [4, 7, 1, 8, 3]
+evens, odds = split_even_odd(numbers)
+print("Even numbers:", evens)
+print("Odd numbers:", odds)
